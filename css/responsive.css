@@ -162,9 +162,13 @@ width: 30%;
    }
    #main_slider a.carousel-control-next {
     display: none;
+
     }
 
-.navbar-light .navbar-nav .nav-link { font-size: 13pt; }
+.navbar-light .navbar-nav .nav-link {
+    font-size: 16pt;
+    font-family: -webkit-body; 
+}
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.5rem;
     padding-left: 1.5rem;
