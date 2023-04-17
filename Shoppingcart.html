@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Shoes</title>
+      <title>Pullshoes</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -16,7 +16,7 @@
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <!-- style css -->
       <link rel="stylesheet" href="css/style.css">
-	  <link rel="stylesheet" href="css/shoppingcart.css">
+      <link rel="stylesheet" href="css/shoppingcart.css">
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
@@ -36,7 +36,7 @@
    <!-- body -->
    <body class="main-layout">
 	<!-- header section start -->
-	<div class="header_section header_main">
+	<div class="header_section">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
@@ -49,26 +49,49 @@
                         </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                           <a class="nav-item nav-link" href="index.html">Home</a>
-                           <a class="nav-item nav-link" href="collection.html">Collection</a>
-                           <a class="nav-item nav-link" href="shoes.html">Shoes</a>
-                           <a class="nav-item nav-link" href="racing boots.html">Racing Boots</a>
-                           <a class="nav-item nav-link" href="contact.html">Contact</a>
+                           <a class="nav-item nav-link" href="index.html">Trang chủ</a>
+                           <a class="nav-item nav-link" href="collection.html">Bộ sưu tập</p></a>
+                           <a class="nav-item nav-link" href="shoes.html">Sản phẩm</a>
+                           <a class="nav-item nav-link" href="contact.html">Liên hệ</a>
                            <a class="nav-item nav-link last" href="#"><img src="images/search_icon.png"></a>
-                           <a class="nav-item nav-link last" href="#"><img src="images/login.png"></a>
-						   <a class="nav-item nav-link last" href="contact.html"><img src="images/shop_icon.png"></a>
+						   <a class="nav-item nav-link last" href="Login&Signup/login.html"><img src="images/login.png"></a>
+                           <a class="nav-item nav-link last" href="Shoppingcart.html"><img src="images/shop_icon.png"></a>
                         </div>
                     </div>
                     </nav>
 				</div>
 			</div>
 		</div>
+    </div>
+	<!-- header section end -->
+    
+	<!-- CART & SOCIAL GROUP-->
+	<div class="cartfixed hidden-xs hidden-sm" data-target="#shop_cart" data-toggle="collapse">
+		<span class="countProduct">0</span><br>
+		<img src="images/shop_icon.png">
+	
+		<div id="shop_cart" class="cart collapse">
+			<span class="caret"></span>
+			<ul class="list-group">
+				<li class="list-group-item title">GIỎ HÀNG (<span class="countProduct">0</span>)</li>
+				<li class="list-group-item divider"></li>
+				<li class="list-group-item items">
+				</li>
+				<li class="list-group-item total"><span class="tleft">Tổng cộng:</span><span class="tright">0 VNĐ</span></li>
+				<li class="list-group-item butn">
+				<a href="https://ananas.vn/your-cart/" class="btn btn-checkout mini-cart-checkout">THANH TOÁN</a>
+				</li>
+				<li class="list-group-item butn">
+				<a href="javascript:void(0)" class="btn btn-addlike multipleAddLike">THÊM VÀO YÊU THÍCH</a>
+				</li>
+			</ul>
+		</div>
 	</div>
-   	<!-- contact section start -->
-    <div class="collection_text">Giỏ hàng của bạn</div>
-    <div class="layout_padding contact_section">
-    	<div class="container">
-
+	
+	<!-- END SOCIAL GROUP -->
+	<!-- new collection section start -->
+    <div class="layout_padding collection_section">
+    	<div class="container">   	    
     	</div>
         <div class="shopping_cart_area">
             <div class="container">  
@@ -159,7 +182,6 @@
             </div>
             <!--Phiếu giảm giá end-->
     </div>
-   	<!-- contact section end -->
 	<!-- section footer start -->
     <div class="section_footer">
     	<div class="container">

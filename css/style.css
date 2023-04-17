@@ -150,6 +150,7 @@ a,
 img {
      max-width: 100%;
      height: auto;
+     
 }
 
  :focus {
@@ -794,4 +795,97 @@ a:hover {
     width: 100%;
     height: auto;
     background: #0c0116;
+}
+
+.cartfixed {
+    position: fixed;
+    right: 0px;
+    top: 232px;
+    width: 40px;
+    height: 75px;
+    background-color: #ff5f17;
+    padding: 10px 2px;
+    color: #fff;
+    font-family: NunitoSanExtraBold;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.cartfixed .list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: transparent;
+    border: none;
+}
+.cartfixed .list-group-item.divider {
+    border-bottom: #000 3px solid;
+    margin: 0px 15px;
+    padding: 0px;
+}
+.cartfixed .items {
+    max-height: 345px;
+    overflow-y: scroll;
+}
+.cartfixed .total {
+    font-size: 13px;
+    font-family: NunitoSanExtraBold;
+    display: block;
+    overflow: hidden;
+    padding-top: 15px;
+}
+.cartfixed .butn {
+    padding: 5px 15px 10px 15px;
+}
+.cartfixed .cart {
+    position: relative;
+    right: 302px;
+    top: -59px;
+    width: 300px;
+    background-color: #f1f1f1;
+    color: #000;
+    text-align: left;
+}
+.cartfixed span.caret {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 6px 6px;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: #ff5f17;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    z-index: 1001;
+}
+.list-group {
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+img {
+    vertical-align: middle;
+}
+.cartfixed .butn .btn-checkout {
+    background-color: #f15e2c;
+}
+.cartfixed .butn .btn-addlike {
+    background-color: #303030;
+    margin-bottom: 5px;
+}
+.cartfixed .total .tright {
+    color: #f15e2c;
+    float: right;
+}
+.cartfixed .items h5 .price, .cartfixed .items h5 .size, .cartfixed .items h5 .quantity, .cartfixed .total .tleft {
+    float: left;
 }
