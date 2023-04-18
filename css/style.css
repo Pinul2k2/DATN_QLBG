@@ -881,7 +881,7 @@ img {
     background-color: #f15e2c;
 }
 .cartfixed .butn .btn-addlike {
-    background-color: #303030;
+    background-color:red;
     margin-bottom: 5px;
 }
 .cartfixed .total .tright {
