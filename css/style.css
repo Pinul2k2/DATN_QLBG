@@ -591,7 +591,7 @@ body{
 	width: 32%;
 	height: 50px;
 	color: #ffffff;
-	background-color: #131111;
+	background-color: #fd6f03;
 	color: #ffffff;
 	font-size: 16pt;	
 	margin-top: 35px;
@@ -822,10 +822,11 @@ a:hover {
     margin-bottom: -1px;
     background-color: transparent;
     border: none;
+    color: #000;
 }
 .cartfixed .list-group-item.divider {
     border-bottom: #000 3px solid;
-    margin: 0px 15px;
+    margin: 0px 0px;
     padding: 0px;
 }
 .cartfixed .items {
@@ -848,7 +849,7 @@ a:hover {
     top: -59px;
     width: 300px;
     background-color: #f1f1f1;
-    color: #000;
+    color: #red;
     text-align: left;
 }
 .cartfixed span.caret {
@@ -881,7 +882,7 @@ img {
     background-color: #f15e2c;
 }
 .cartfixed .butn .btn-addlike {
-    background-color: #303030;
+    background-color: red ;
     margin-bottom: 5px;
 }
 .cartfixed .total .tright {
@@ -890,6 +891,7 @@ img {
 }
 .cartfixed .items h5 .price, .cartfixed .items h5 .size, .cartfixed .items h5 .quantity, .cartfixed .total .tleft {
     float: left;
+    color: #000;
 }
 
 .prd1-cont {
@@ -1171,8 +1173,7 @@ nav-tabs.nav-justified {
     width: 100%;
 }
 
-.collapse {
-    display: none;
+
 }
 .left-tree-mobile .nav {
     /* padding: 0px 15px; */
