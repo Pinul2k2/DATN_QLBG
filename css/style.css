@@ -958,7 +958,8 @@ img {
 }
 .prd1-left .left-type-item a {
     background-color: #fff;
-    color: #000;
+    color: #999;
+    margin: 25px;
 }
 .prd1-left .left-type-item .glyphicon {
     display: none;
