@@ -1,0 +1,329 @@
+.main-cart {
+    max-width: 1200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical>.btn-group:before, .btn-group-vertical>.btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-header:before, .modal-header:after, .modal-footer:before, .modal-footer:after {
+    content: " ";
+    display: table;
+}
+optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+.wishlist {
+    padding-right: 20px;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}
+body {
+    font-family: NunitoSanRegular;
+    color: #555;
+}
+.wishlist .title-1 {
+    color: #000;
+    font-family: GeometricExtraBold;
+    font-size: 30px;
+    margin: 10px 0px 40px 0px;
+    text-align: center;
+}
+@media (min-width: 992px)
+.col-md-12 {
+    width: 100%;
+}
+.wishlist .infor-bar .left {
+    float: left;
+    text-align: left;
+    margin-left: -10px;
+    font-family: NunitoSanExtraBold;
+    font-size: 16px;
+    color: #808080;
+    margin-bottom: 0px;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.wishlist .item-divider-2 {
+    border-bottom: #000 2px solid;
+    height: 1px;
+    margin: 10px 0px 20px 0px;
+}
+.wishlist .item-2 {
+    margin-left: -10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.media:first-child {
+    margin-top: 0;
+}
+.wishlist .item-2 .media-left {
+    padding-right: 20px;
+}
+.wishlist .item-2 .media-left a {
+    display: block;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+}
+.wishlist .item-2 .media-object {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    background-color: #cccccc;
+    /* border: #dddddd 1px solid; */
+}
+.media-left, .media-right, .media-body {
+    display: table-cell;
+    vertical-align: top;
+}
+a {
+    color: #000;
+}
+.wishlist .item-2 .media-heading {
+    color: #000;
+    font-family: NunitoSanExtraBold;
+    font-size: 21px;
+    margin-bottom: 0px;
+    min-height: 50px;
+}
+.wishlist .item-2 .price {
+    color: #808080;
+    font-family: NunitoSanRegular;
+    margin-top: 10px;
+}
+.wishlist .item-2 .price .saleoff {
+    font-size: 16px;
+}
+.wishlist .item-2 .price .saleoff {
+    font-size: 16px;
+}
+.wishlist .item-2 .bottom {
+    position: absolute;
+    bottom: 0px;
+}
+.clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical>.btn-group:before, .btn-group-vertical>.btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-header:before, .modal-header:after, .modal-footer:before, .modal-footer:after {
+    content: " ";
+    display: table;
+}
+@media (min-width: 992px)
+.col-md-6 {
+    width: 50%;
+}
+.wishlist .item-2 .bottom h5 {
+    color: #000;
+    font-family: NunitoSanExtraBold;
+    font-size: 16px;
+}
+select.bs-select-hidden, select.selectpicker {
+    display: none!important;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 220px;
+}
+.wishlist .btn-group .dropdown-toggle {
+    max-width: 120px;
+}
+.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.bootstrap-select.btn-group .dropdown-toggle .caret {
+    background: #fff url(../images/icon_down_black.png) no-repeat;
+    position: relative;
+    width: 12px;
+    height: 8px;
+    border: none;
+    right: 1px;
+}
+.wishlist .bootstrap-select button, .wishlist .bootstrap-select .dropdown-menu {
+    border-radius: 0px;
+    background-color: #fff;
+    border: #a5a5a5 1px solid;
+    font-family: NunitoSanExtraBold;
+    font-size: 16px;
+}
+
+.wishlist .bootstrap-select.btn-group .dropdown-menu.inner {
+    padding-left: 6px;
+    overflow: unset !important;
+}
+.wishlist .bootstrap-select.btn-group .dropdown-menu li:first-child {
+    display: none;
+}
+.bootstrap-select.btn-group .dropdown-menu li a {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+element.style {
+    max-height: 434.35px;
+    overflow: hidden;
+    min-height: 90px;
+}
+.wishlist .bootstrap-select.btn-group .dropdown-menu li a span.text {
+    font-family: NunitoSanRegular;
+    font-size: 16px;
+}
+.bootstrap-select.btn-group .dropdown-menu li a span.check-mark {
+    display: none;
+}
+.wishlist .bootstrap-select.btn-group .dropdown-menu li.selected {
+    background-color: #f1f1f1;
+}
+.wishlist .bootstrap-select.btn-group .dropdown-menu li.selected {
+    background-color: #f1f1f1;
+}
+.wishlist .bootstrap-select.btn-group .dropdown-menu li.selected a span.text {
+    font-family: NunitoSanExtraBold;
+}
+.bootstrap-select.btn-group .dropdown-menu li a span.check-mark {
+    display: none;
+}
+.wishlist .bootstrap-select.btn-group .dropdown-menu li {
+    float: left;
+    border: #808080 1px solid;
+    margin-left: -1px;
+    margin-bottom: -1px;
+}
+
+select.bs-select-hidden, select.selectpicker {
+    display: none!important;
+}
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 220px
+px
+;
+}
+.wishlist .btn-group .dropdown-toggle {
+    max-width: 120px;
+}
+.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+}
+element.style {
+    max-height: 424.35px;
+    overflow-y: auto;
+    min-height: 80px;
+}
+.wishlist .bootstrap-select button, .wishlist .bootstrap-select .dropdown-menu {
+    border-radius: 0px;
+    background-color: #fff;
+    border: #a5a5a5 1px solid;
+    font-family: NunitoSanExtraBold;
+    font-size: 16px;
+}
+.wishlist .bootstrap-select.btn-group .dropdown-menu.inner {
+    padding-left: 6px;
+    overflow: unset !important;
+}
+.clearfix:after, .dl-horizontal dd:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after, .btn-toolbar:after, .btn-group-vertical>.btn-group:after, .nav:after, .navbar:after, .navbar-header:after, .navbar-collapse:after, .pager:after, .panel-body:after, .modal-header:after, .modal-footer:after {
+    clear: both;
+}
+.wishlist .item-2-1 {
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 0px;
+    text-align: right;
+    /* position: relative; */
+}
+.wishlist .item-2-1 .price {
+    color: #f15e2c;
+    font-family: GeometricExtraBold;
+    font-size: 23px;
+    margin-bottom: 0px;
+    min-height: 50px;
+}
+.wishlist .item-2-1 .status {
+    color: #f15e2c;
+    font-family: NunitoSanSBoldI;
+    font-size: 16px;
+}
+.wishlist .item-2-1 .button {
+    position: absolute;
+    bottom: -108px;
+    text-align: right;
+    display: block;
+    overflow: hidden;
+    right: 0;
+    max-width: 130px;
+}
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.wishlist .item-2-1 .btn-like {
+    background-color: #fff;
+    margin-bottom: 10px;
+    border: #a3a3a3 1px solid;
+}
+img {
+    vertical-align: middle;
+}
+.wishlist .item-2-1 .btn-delete {
+    background-color: #303030;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.wishlist .item-divider-3 {
+    border-bottom: #000 2px solid;
+    height: 1px;
+    margin: 20px 0px 0px 0px;
+}
+.wishlist .title-3 {
+    margin: 40px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.wishlist .title-3 .btn-delall, .wishlist .title-3 .btn-cont {
+    border-radius: 0px;
+    height: 40px;
+    width: 240px;
+    /* padding-top: 9px; */
+    border: none;
+    background-color: #303030;
+    color: #fff;
+    font-family: GeometricExtraBold;
+    font-size: 18px;
+}
+.wishlist .title-3 {
+    margin: 40px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.wishlist .title-3 .btn-cont {
+    float: right;
+}
