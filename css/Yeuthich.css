@@ -327,3 +327,8 @@ img {
 .wishlist .title-3 .btn-cont {
     float: right;
 }
+element.style {
+    max-height: 293.55px;
+    overflow-y: auto;
+    min-height: 80px;
+}
