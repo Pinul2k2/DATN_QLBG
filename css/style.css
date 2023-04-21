@@ -221,6 +221,7 @@ button {
 	padding: 20px 0px;
 	background-size: 100%;
 	background-repeat: no-repeat;
+    
 }
 
 .padding_0{ width: 100%; float: left; }
@@ -393,6 +394,7 @@ body{
 .collection_section_2{
 	width: 100%;
 	float: left;
+    margin-bottom: 30px;
 }
 
 .about-img {
@@ -712,6 +714,7 @@ a:hover {
     float: left;
     font-size: 28px;
     color: #ebebeb;
+    font-family: ui-sans-serif;
 }
 .dummy_text {
     width: 100%;
@@ -796,7 +799,6 @@ a:hover {
 .header_main {
     width: 100%;
     height: auto;
-    background: #0c0116;
 }
 
 .cartfixed {
@@ -902,6 +904,8 @@ img {
 .row {
     margin-left: -10px;
     margin-right: -10px;
+    font-family: ui-sans-serif;
+z-index: ;
 }
 .prd1-left {
     padding-right: 20px;
@@ -1071,6 +1075,7 @@ input[type="radio"], input[type="checkbox"] {
 nav-tabs.nav-justified {
     width: 100%;
     border-bottom: 0;
+    
 }
 @media (min-width: 768px)
 .nav-tabs.nav-justified>li 
@@ -1364,4 +1369,24 @@ input, button, select, textarea {
 }
 .clearfix:after, .dl-horizontal dd:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after, .btn-toolbar:after, .btn-group-vertical>.btn-group:after, .nav:after, .navbar:after, .navbar-header:after, .navbar-collapse:after, .pager:after, .panel-body:after, .modal-header:after, .modal-footer:after {
     clear: both;
+}
+
+/* gio hang */
+a.btn.btn-addlike {
+    display: inline-flex;
+    align-items: center;
+}
+/*font */
+.navbar-light .navbar-nav .nav-link {
+    font-size: 16pt;
+    font-family: ui-sans-serif;
+}
+.lorem_text {
+    font-size: 10pt;
+    font-family: ui-sans-serif;
+    font-size: 15pt;
+}
+b, strong {
+    font-weight: bolder;
+    font-family: ui-sans-serif;
 }

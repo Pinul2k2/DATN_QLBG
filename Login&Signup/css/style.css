@@ -1076,7 +1076,9 @@ pre {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 83.33333%;
     flex: 0 0 83.33333%;
-    max-width: 83.33333%; }
+    max-width: 83.33333%; 
+    font-family: ui-sans-serif;
+}
   .col-lg-11 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 91.66667%;
@@ -8155,14 +8157,15 @@ h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
   font-weight: 400;
-  font-family: "Lato", Arial, sans-serif;
+  font-family: ui-sans-serif;
   color: #000; }
 
 .bg-primary {
   background: #e3b04b !important; }
 
 .ftco-section {
-  padding: 7em 0; }
+  padding: 7em 0;
+  background: oldlace; }
 
 .ftco-no-pt {
   padding-top: 0; }
@@ -8201,7 +8204,8 @@ h1, h2, h3, h4, h5,
 .login-wrap {
   position: relative;
   background: #fff h3;
-    background-font-weight: 300; }
+    background-font-weight: 300;
+    font-family: ui-sans-serif; }
 
 .form-group {
   position: relative; }
