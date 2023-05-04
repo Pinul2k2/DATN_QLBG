@@ -1,3 +1,27 @@
+<?php session_start();
+require_once('./admincp/config.php');
+
+// Code for sanpham
+echo ($_POST['san_pham']);
+if (isset($_POST['san_pham'])) {
+	$masp = $_POST['masp'];
+	$tensp = $_POST['tensp'];
+	$maloai = $_POST['maloai'];
+	$giasp = $_POST['giasp'];
+	$hinh = $_POST['hinh'];
+	$tinhtrang = $_POST['tinhtrang'];
+	$ret = mysqli_query($conn, "SELECT * FROM san_pham order by created_at ");
+	$num = mysqli_fetch_array($ret);
+
+}
+
+//$result = mysqli_query($conn, $sql);
+//$san_pham = mysqli_fetch_all($result, MYSQLI_ASSOC);
+//mysqli_free_result($result);
+//mysqli_close($conn);
+//var_dump($_POST);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,7 +66,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
-					<div class="logo"><a href="Trangchu.html"><img src="images/Pustore.png"></a></div>
+					<div class="logo"><a href="Trangchu.php"><img src="images/Pustore.png"></a></div>
 				</div>
 				<div class="col-sm-9">
 					<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -53,15 +77,15 @@
 						</button>
 						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 							<div class="navbar-nav">
-								<a class="nav-item nav-link" href="Trangchu.html">Trang chủ</a>
-								<a class="nav-item nav-link" href="Bosuutap.html">Bộ sưu tập</a>
-								<a class="nav-item nav-link" href="Sanpham.html">Sản phẩm</a>
-								<a class="nav-item nav-link" href="Lienhe.html">Liên hệ</a>
-								<a class="nav-item nav-link last" href="Login&Signup/login.html"><img
+								<a class="nav-item nav-link" href="Trangchu.php">Trang chủ</a>
+								<a class="nav-item nav-link" href="Bosuutap.php">Bộ sưu tập</a>
+								<a class="nav-item nav-link" href="Sanpham.php">Sản phẩm</a>
+								<a class="nav-item nav-link" href="Lienhe.php">Liên hệ</a>
+								<a class="nav-item nav-link last" href="Login&Signup/login.php"><img
 										src="images/login.png"></a>
 
 								<a class="nav-item nav-link last" href="#"><img src="images/search_icon.png"></a> <a
-									class="nav-item nav-link last" href="Giohang.html"><img
+									class="nav-item nav-link last" href="Giohang.php"><img
 										src="images/shop_icon.png"></a>
 
 							</div>
@@ -1246,7 +1270,7 @@
 			<div class="mail_section">
 				<div class="row">
 					<div class="col-sm-6 col-lg-2">
-						<div><a href="Trangchu.html"><img src="images/Pustore.png"></a></div>
+						<div><a href="Trangchu.php"><img src="images/Pustore.png"></a></div>
 					</div>
 					<div class="col-sm-6 col-lg-2">
 						<div class="footer-logo"><img src="images/phone-icon.png"><span
