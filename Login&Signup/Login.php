@@ -3,7 +3,6 @@ require_once('../admincp/config.php');
 
 
 // Code for login 
-echo ($_POST['login']);
 if (isset($_POST['login'])) {
 	$password = $_POST['password'];
 	$dec_password = $password;
@@ -24,7 +23,6 @@ if (isset($_POST['login'])) {
 		$host = $_SERVER['HTTP_HOST'];
 		$uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
 		header("header.php");
-		//header("location:http://$host$uri/$extra");
 		exit();
 	}
 }
@@ -102,7 +100,7 @@ if (isset($_POST['login'])) {
 									</div>
 								</div>
 							</form>
-							<p class="text-center">Bạn không có tài khoản? <a data-toggle="tab" href="Login.php">Đăng
+							<p class="text-center">Bạn không có tài khoản? <a data-toggle="tab" href="Signup.php">Đăng
 									ký</a></p>
 						</div>
 					</div>

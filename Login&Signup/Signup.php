@@ -20,6 +20,7 @@ if (isset($_POST['signup'])) {
 			echo "<script>alert('Register successfully');</script>";
 		}
 	}
+	header('Location:Login.php');
 
 }
 

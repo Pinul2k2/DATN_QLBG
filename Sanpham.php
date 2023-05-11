@@ -1,19 +1,9 @@
 <?php session_start();
 require_once('./admincp/config.php');
 
-// Code for sanpham
-echo ($_POST['san_pham']);
-if (isset($_POST['san_pham'])) {
-	$masp = $_POST['masp'];
-	$tensp = $_POST['tensp'];
-	$maloai = $_POST['maloai'];
-	$giasp = $_POST['giasp'];
-	$hinh = $_POST['hinh'];
-	$tinhtrang = $_POST['tinhtrang'];
-	$ret = mysqli_query($conn, "SELECT * FROM san_pham order by created_at ");
-	$num = mysqli_fetch_array($ret);
+$sql_pro = "SELECT * FROM san_pham ";
+$query_pro = mysqli_query($conn, $sql_pro);
 
-}
 
 //$result = mysqli_query($conn, $sql);
 //$san_pham = mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -1218,14 +1208,13 @@ if (isset($_POST['san_pham'])) {
 
 				<div class="row prd1-right-items">
 					<?php
-					for ($i = 0; $i < 10; $i++) {
+					while ($row_pro = mysqli_fetch_array($query_pro)) {
 						?>
 						<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
 							<div class="thumbnail">
 								<div class="cont-item">
 									<a href="">
-										<img class="inormal"
-											src="https://ananas.vn/wp-content/uploads/Pro_AV00174_1-500x500.jpeg">
+										<img class="inormal" src="images/Giày/<?php echo $row_pro['HINH'] ?>">
 									</a>
 								</div>
 								<div class="button">
@@ -1237,11 +1226,16 @@ if (isset($_POST['san_pham'])) {
 								<div class="caption">
 									<h3 class="type">New Arrival</h3>
 									<h3 class="divider"></h3>
-									<h3 class="name"><a href="">Vintas Jazico - High Top</a>
+									<h3 class="name"><a href="">
+											<?php echo $row_pro['TENSP'] ?>
+										</a>
 									</h3>
-									<h3 class="color">Royal White</h3>
+									<h3 class="color">
+										<?php echo $row_pro['MALOAI'] ?>
+									</h3>
 									<h3 class="price">
-										780.000 VND </h3>
+										<?php echo $row_pro['GIASP'] ?>
+									</h3>
 								</div>
 							</div>
 						</div>
@@ -1249,6 +1243,9 @@ if (isset($_POST['san_pham'])) {
 					?>
 
 				</div>
+
+
+
 			</div>
 		</div>
 	</div>
