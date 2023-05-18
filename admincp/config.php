@@ -1,9 +1,14 @@
 <?php
-$mysqli = new mysqli("localhost","root","","datn_qlbg");
+$servername = "localhost";
+$username = "root";
+$password = "";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
 
 // Check connection
-if ($mysqli->connect_errno) {
-  echo "Kết nối MYSQLi lỗi " . $mysqli->connect_error;
-  exit();
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
 }
+echo "Connected successfully";
 ?>
