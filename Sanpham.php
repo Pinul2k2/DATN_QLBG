@@ -1224,8 +1224,8 @@ $query_pro = mysqli_query($conn, $sql_pro);
 										data-action="transferCartToWishList" data-idproduct="786805"></a>
 								</div>
 								<div class="caption">
-									<h3 class="type">New Arrival</h3>
-									<h3 class="divider"></h3>
+									<h3 class="type"></h3>
+
 									<h3 class="name"><a href="">
 											<?php echo $row_pro['TENSP'] ?>
 										</a>
