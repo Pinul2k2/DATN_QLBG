@@ -168,6 +168,7 @@ require_once('./admincp/config.php');
                                                             </a>
                                                         </td>
 
+
                                                         <td class="product-price">
                                                             <?php echo number_format($cart_item['GIASP'], 0, ',', '.') . ' VND' ?>
 
@@ -220,7 +221,7 @@ require_once('./admincp/config.php');
                                     <h3>Tổng số giỏ hàng</h3>
                                     <div class="coupon_inner">
                                         <div class="cart_subtotal">
-                                            <p>Tổng hóa đơn hàng</p>
+                                            <p>Tổng hóa đơn</p>
                                             <p>
 
                                                 <?php
