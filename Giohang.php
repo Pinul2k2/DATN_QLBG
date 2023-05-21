@@ -223,7 +223,14 @@ require_once('./admincp/config.php');
                                             <p>Tổng hóa đơn hàng</p>
                                             <p>
 
-                                                <?php echo number_format($tongtien, 0, ',', '.') . ' VND' ?>
+                                                <?php
+                                                if (isset($_SESSION['gio_hang'])) {
+                                                    echo number_format($tongtien, 0, ',', '.') . ' VND';
+                                                } else {
+                                                    echo "";
+                                                }
+
+                                                ?>
                                             </p>
                                         </div>
                                         <div class="cart_subtotal ">
