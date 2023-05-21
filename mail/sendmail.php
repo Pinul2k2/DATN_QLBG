@@ -1,8 +1,8 @@
 <?php
 
-include_once('PHPMailer-master/src/PHPMailer.php');
-include_once('PHPMailer-master/src/SMTP.php');
-include_once('PHPMailer-master/src/Exception.php');
+include_once('PHPMailer/src/PHPMailer.php');
+include_once('PHPMailer/src/SMTP.php');
+include_once('PHPMailer/src/Exception.php');
 class Mailer
 {
    public function dathangmail($tieude, $noidung, $maildathang)

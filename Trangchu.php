@@ -1,3 +1,7 @@
+<? session_start();
+require_once('./admincp/config.php');
+var_dump($_SESSION);
+?>
 <!DOCTYPE html>
 <html lang="en">
 

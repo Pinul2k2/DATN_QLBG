@@ -61,7 +61,7 @@
 								<a class="nav-item nav-link last" href="#"><img src="images/search_icon.png"></a>
 								<a class="nav-item nav-link last" href="Login&Signup/login.php"><img
 										src="images/login.png"></a>
-								<a class="nav-item nav-link last" href="Giohang.phpF"><img
+								<a class="nav-item nav-link last" href="Giohang.php"><img
 										src="images/shop_icon.png"></a>
 							</div>
 						</div>

@@ -1398,6 +1398,42 @@ nav-tabs.nav-justified {
     min-height: 200px;
 }
 
+.clearfix:before,
+.clearfix:after,
+.dl-horizontal dd:before,
+.dl-horizontal dd:after,
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical>.btn-group:before,
+.btn-group-vertical>.btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-header:before,
+.modal-header:after,
+.modal-footer:before,
+.modal-footer:after {
+    content: " ";
+    display: table;
+}
+
 .prd1-right-items .item {
     margin-bottom: 20px;
 }
@@ -1461,6 +1497,69 @@ nav-tabs.nav-justified {
     opacity: 0;
 }
 
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.prd1-right-items .thumbnail .btn-prd1-heart {
+    border-radius: 0px;
+    /* background: url(../images/heart.png) no-repeat; */
+    background: url(images/Heart_product_1.svg) no-repeat;
+    border: none;
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.prd-detail-slide1 .thumbnail .cont-item,
+.prd-detail-slide .thumbnail .cont-item,
+.prd-detail-img .thumbnail .cont-item,
+.prd1-right-items .thumbnail .cont-item {
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+
+.clearfix:before,
+.clearfix:after,
+.dl-horizontal dd:before,
+.dl-horizontal dd:after,
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical>.btn-group:before,
+.btn-group-vertical>.btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-header:before,
+.modal-header:after,
+.modal-footer:before,
+.modal-footer:after {
+    content: " ";
+    display: table;
+}
+
 .btn {
     display: inline-block;
     margin-bottom: 0;
@@ -1505,6 +1604,7 @@ nav-tabs.nav-justified {
     margin-bottom: 20px;
 }
 
+
 .prd1-right-items .thumbnail {
     display: inline-block;
     padding: 0px;
@@ -1517,6 +1617,17 @@ nav-tabs.nav-justified {
     position: relative;
     width: 100%;
     overflow: hidden;
+}
+
+.prd-detail-slide1 .thumbnail .cont-item,
+.prd-detail-slide .thumbnail .cont-item,
+.prd-detail-img .thumbnail .cont-item,
+.prd1-right-items .thumbnail .cont-item {
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 30px;
+    position: relative;
 }
 
 .prd1-right-items .item-break {
@@ -1701,4 +1812,76 @@ b,
 strong {
     font-weight: bolder;
     font-family: ui-sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.justify-content-between {
+    justify-content: space-between !important;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.text-primary {
+    color: #D19C97 !important;
+}
+
+.fa-eye:before {
+    content: "\f06e";
+}
+
+button.themgiohang {
+    background-color: #f777;
+}
+
+.mr-1,
+.mx-1 {
+    margin-right: 0.25rem !important;
+}
+
+.fa-shopping-cart:before {
+    content: "\f07a";
+}
+
+.fa-solid,
+.fas {
+    font-weight: 900;
+}
+
+.fa-plus-square:before,
+.fa-square-plus:before {
+    content: "\f0fe";
+}
+
+a {
+    color: #D19C97;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.fa-minus-square:before,
+.fa-square-minus:before {
+    content: "\f146";
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.fa-solid,
+.fas {
+    font-weight: 900;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #EDF1FF;
 }

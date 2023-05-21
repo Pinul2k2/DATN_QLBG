@@ -1,3 +1,13 @@
+<?php
+require_once('./admincp/config.php');
+
+//$sql_pro = "SELECT * FROM gio_hang ";
+//$query_pro = mysqli_query($conn, $sql_pro);
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -108,6 +118,7 @@ require_once('./admincp/config.php');
     <!-- END SOCIAL GROUP -->
     <!-- new collection section start -->
     <div class="layout_padding collection_section">
+
         <div class="container">
         </div>
         <div class="shopping_cart_area">
@@ -129,34 +140,57 @@ require_once('./admincp/config.php');
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td class="product_remove"><a href="#"><i class="fa fa-trash-o"></i></a>
-                                                </td>
-                                                <td class="product_thumb"><a href="#"><img
-                                                            src="images/ảnh 2/Adidas Ultraboost Light FTWR WHITE Orange.png"
-                                                            alt=""></a></td>
-                                                <td class="product_name"><a href="#"></a>Adidas Ultraboost Light FTWR
-                                                    WHITE Orange</td>
-                                                <td class="product-price">5.200.000 VND</td>
-                                                <td class="product_quantity"><input min="0" max="100" value="1"
-                                                        type="number"></td>
-                                                <td class="product_total">5.200.000 VND</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="product_remove"><a href="#"><i class="fa fa-trash-o"></i></a>
-                                                </td>
-                                                <td class="product_thumb"><a href="#"><img
-                                                            src="images/Football nam Nike/NikeGripknitPhantomGXEliteDynamicFitFG.3.png"
-                                                            alt=""></a></td>
-                                                <td class="product_name"><a href="#">Nike Gripknit PhantomGXE Lite
-                                                        Dynamic FitFG</a></td>
-                                                <td class="product-price">7,000,000 VND</td>
-                                                <td class="product_quantity"><input min="0" max="100" value="1"
-                                                        type="number"></td>
-                                                <td class="product_total">7,629,000 VND</td>
+
+                                            <?php
+                                            if (isset($_SESSION['gio_hang'])) {
+                                                $i = 0;
+                                                $tongtien = 0;
+                                                foreach ($_SESSION['gio_hang'] as $cart_item) {
+                                                    $thanhtien = $cart_item['soluong'] * $cart_item['GIASP'];
+                                                    $tongtien += $thanhtien;
+
+                                                    $i++;
 
 
-                                            </tr>
+                                                    ?>
+
+
+                                                    <tr>
+                                                        <td class="product_remove"><a
+                                                                href="themgiohang.php?xoa=<?php echo $cart_item['id'] ?>"><i
+                                                                    class="fa fa-trash-o"></i></a>
+                                                        </td>
+                                                        <td class="product_thumb"><img
+                                                                src="images/Giày/<?php echo $cart_item['HINH']; ?>"></a>
+                                                        </td>
+                                                        <td class="product_name">
+                                                            <?php echo $cart_item['TENSP']; ?>
+                                                            </a>
+                                                        </td>
+
+                                                        <td class="product-price">
+                                                            <?php echo number_format($cart_item['GIASP'], 0, ',', '.') . ' VND' ?>
+
+                                                        </td>
+                                                        <td class="product_quantity">
+                                                            <a href="themgiohang.php?cong=<?php echo $cart_item['id'] ?>"><i
+                                                                    class="fa-solid fa-square-plus"></i></a>
+                                                            <?php echo $cart_item['soluong']; ?>
+                                                            <a href="themgiohang.php?tru=<?php echo $cart_item['id'] ?>"><i
+                                                                    class="fa-solid fa-square-minus"></i></a>
+                                                        </td>
+
+                                                        <td class="product-price">
+                                                            <?php echo number_format($thanhtien, 0, ',', '.') . ' VND' ?>
+                                                        </td>
+
+
+                                                    </tr>
+                                                    <?php
+                                                }
+                                            }
+                                            ?>
+
 
                                         </tbody>
                                     </table>
@@ -187,7 +221,10 @@ require_once('./admincp/config.php');
                                     <div class="coupon_inner">
                                         <div class="cart_subtotal">
                                             <p>Tổng hóa đơn hàng</p>
-                                            <p class="cart_amount">8,629,000 VND</p>
+                                            <p>
+
+                                                <?php echo number_format($tongtien, 0, ',', '.') . ' VND' ?>
+                                            </p>
                                         </div>
                                         <div class="cart_subtotal ">
                                             <p>Giá vận chuyển</p>
@@ -244,7 +281,8 @@ require_once('./admincp/config.php');
                             </div>
                             <div class="col-sm-4 col-lg-2">
                                 <h2 class="shop_text">Địa chỉ</h2>
-                                <div class="image-icon"><img src="images/map-icon.png"><span class="pet_text">85 , Huỳnh
+                                <div class="image-icon"><img src="images/map-icon.png"><span class="pet_text">85 ,
+                                        Huỳnh
                                         Thúc Kháng , Quận 1 , TP Hồ Chí Minh</span></div>
                             </div>
                             <div class="col-sm-4 col-md-6 col-lg-3">
@@ -291,6 +329,7 @@ require_once('./admincp/config.php');
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/jquery-3.0.0.min.js"></script>
         <script src="js/plugin.js"></script>
+
         <!-- sidebar -->
         <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="js/custom.js"></script>

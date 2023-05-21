@@ -3,8 +3,6 @@ require_once('./admincp/config.php');
 
 $sql_pro = "SELECT * FROM san_pham ";
 $query_pro = mysqli_query($conn, $sql_pro);
-
-
 //$result = mysqli_query($conn, $sql);
 //$san_pham = mysqli_fetch_all($result, MYSQLI_ASSOC);
 //mysqli_free_result($result);
@@ -71,11 +69,11 @@ $query_pro = mysqli_query($conn, $sql_pro);
 								<a class="nav-item nav-link" href="Bosuutap.php">Bộ sưu tập</a>
 								<a class="nav-item nav-link" href="Sanpham.php">Sản phẩm</a>
 								<a class="nav-item nav-link" href="Lienhe.php">Liên hệ</a>
+								<a class="nav-item nav-link last" href="#"><img src="images/search_icon.png"></a>
 								<a class="nav-item nav-link last" href="Login&Signup/login.php"><img
 										src="images/login.png"></a>
 
-								<a class="nav-item nav-link last" href="#"><img src="images/search_icon.png"></a> <a
-									class="nav-item nav-link last" href="Giohang.php"><img
+								<a class="nav-item nav-link last" href="Giohang.php"><img
 										src="images/shop_icon.png"></a>
 
 							</div>
@@ -1217,15 +1215,12 @@ $query_pro = mysqli_query($conn, $sql_pro);
 										<img class="inormal" src="images/Giày/<?php echo $row_pro['HINH'] ?>">
 									</a>
 								</div>
-								<div class="button">
-									<a class="btn btn-prd1-buynow hidden-xs hidden-sm" href="">MUA
-										NGAY</a>
-									<a class="btn btn-prd1-heart addToWishList" href="javascript:void(0)" data-liked="false"
-										data-action="transferCartToWishList" data-idproduct="786805"></a>
-								</div>
-								<div class="caption">
-									<h3 class="type"></h3>
 
+								<div class="caption">
+									<h3 class="type">New Arrival</h3>
+
+									</form>
+									<h3 class="divider"></h3>
 									<h3 class="name"><a href="">
 											<?php echo $row_pro['TENSP'] ?>
 										</a>
@@ -1234,8 +1229,17 @@ $query_pro = mysqli_query($conn, $sql_pro);
 										<?php echo $row_pro['MALOAI'] ?>
 									</h3>
 									<h3 class="price">
-										<?php echo $row_pro['GIASP'] ?>
+										<?php echo number_format($row_pro['GIASP'], 0, ',', '.') . ' VND' ?>
 									</h3>
+									<form method="POST" action="themgiohang.php?MASP=<?php echo $row_pro['MASP'] ?> ">
+										<div class="card-footer d-flex justify-content-between bg-light border">
+											<a href="detail.php<?php echo $row_pro['MASP'] ?>"
+												class="btn btn-sm text-dark p-0"><i
+													class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+											<button name="themgiohang" value="Thêm giỏ hàng" class="themgiohang"><i
+													class="fa fa-shopping-cart mr-1"></i>Thêm giỏ hàng</button>
+										</div>
+									</form>
 								</div>
 							</div>
 						</div>
