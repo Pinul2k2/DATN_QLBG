@@ -340,7 +340,7 @@ body {
 .carousel-item,
 .container,
 .fill {
-    display: table-footer-group;
+    /* display: table-footer-group; */
     height: 1000%;
     width: 100%;
     background-position: center center;
@@ -417,7 +417,7 @@ body {
     margin-bottom: 5px;
 }
 
-}
+
 
 .carousel-indicators li.active {
     margin-bottom: 5px;
@@ -1372,7 +1372,7 @@ nav-tabs.nav-justified {
 }
 
 
-}
+
 
 .left-tree-mobile .nav {
     /* padding: 0px 15px; */

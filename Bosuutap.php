@@ -123,12 +123,14 @@ $san_pham = mysqli_fetch_all($query_pro, MYSQLI_ASSOC);
 						<div class="about-img">
 							<button class="new_bt">Mới</button>
 							<div class="shoes-img">
-								<ims src="images/Giày/<?php echo $san_pham[1]['HINH'] ?>">
+								<img src="images/Giày/<?php echo $san_pham[0]['HINH'] ?>">
 							</div>
 							<p class="sport_text">
 								<?php echo $san_pham[0]['TENSP'] ?>
 							</p>
-							<div class="dolar_text">$<strong style="color: #f12a47;">166.03</strong> </div>
+							<div class="dolar_text"><strong style="color: #f12a47;">
+									<?php echo $san_pham[0]['GIASP'] ?>
+								</strong> </div>
 							<div class="star_icon">
 								<ul>
 									<li><a href="#"><img src="images/star-icon.png"></a></li>
@@ -143,9 +145,15 @@ $san_pham = mysqli_fetch_all($query_pro, MYSQLI_ASSOC);
 					</div>
 					<div class="col-md-6">
 						<div class="about-img2">
-							<div class="shoes-img2"><img src="images/j45oieb4.png"></div>
-							<p class="sport_text">FORUM LOW CLASSIC SHOES</p>
-							<div class="dolar_text">$<strong style="color: #f12a47;">106.43</strong> </div>
+							<div class="shoes-img2">
+								<img src="images/Giày/<?php echo $san_pham[1]['HINH'] ?>">
+							</div>
+							<p class="sport_text">
+								<?php echo $san_pham[1]['TENSP'] ?>
+							</p>
+							<div class="dolar_text"><strong style="color: #f12a47;">
+									<?php echo $san_pham[1]['GIASP'] ?>
+								</strong> </div>
 							<div class="star_icon">
 								<ul>
 									<li><a href="#"><img src="images/star-icon.png"></a></li>
