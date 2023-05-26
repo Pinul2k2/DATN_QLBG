@@ -1281,7 +1281,7 @@ $query_pro = mysqli_query($conn, $sql_pro);
 					</div>
 					<div class="col-sm-6 col-lg-3">
 						<div class="footer-logo"><img src="images/email-icon.png"><span
-								class="map_text">Pustore@gmail.com</span></div>
+								class="map_text">Pustore158@gmail.com</span></div>
 					</div>
 					<div class="col-sm-6 col-lg-3">
 						<div class="social_icon">

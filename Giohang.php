@@ -180,6 +180,7 @@ require_once('./admincp/config.php');
                                                         </td>
 
 
+
                                                         <td class="product-price">
                                                             <?php echo number_format($cart_item['GIASP'], 0, ',') . ' VND' ?>
 

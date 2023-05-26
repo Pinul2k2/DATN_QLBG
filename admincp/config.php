@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbName = "datn_qlbg";
+$dbName = "datn-qlbg";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbName);
 
