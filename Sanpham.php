@@ -40,8 +40,9 @@ $query_pro = mysqli_query($conn, $sql_pro);
 	<!-- owl stylesheets -->
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
-		media="screen">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -1217,10 +1218,11 @@ $query_pro = mysqli_query($conn, $sql_pro);
 								</div>
 
 								<div class="caption">
-									<h3 class="type">New Arrival</h3>
-
+									<h3 class="type"></h3>
+									<h3 class="type"></h3>
+									<h3 class="type"></h3>
 									</form>
-									<h3 class="divider"></h3>
+									<h3 class='#'></h3>
 									<h3 class="name"><a href="">
 											<?php echo $row_pro['TENSP'] ?>
 										</a>
@@ -1234,8 +1236,8 @@ $query_pro = mysqli_query($conn, $sql_pro);
 									<form method="POST" action="themgiohang.php?MASP=<?php echo $row_pro['MASP'] ?> ">
 										<div class="card-footer d-flex justify-content-between bg-light border">
 											<a href="detail.php<?php echo $row_pro['MASP'] ?>"
-												class="btn btn-sm text-dark p-0"><i
-													class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+												class="btn btn-sm text-dark p-0">
+												<i class="fa-regular fa-eye mr-1"></i> Chi tiết</a>
 											<button name="themgiohang" value="Thêm giỏ hàng" class="themgiohang"><i
 													class="fa fa-shopping-cart mr-1"></i>Thêm giỏ hàng</button>
 										</div>

@@ -4,17 +4,18 @@ require_once('../admincp/config.php');
 
 //Code for Registration
 if (isset($_POST['signup'])) {
-	$fname = $_POST['fname'];
-	$lname = $_POST['lname'];
+	$username = $_POST['tenkhachhang'];
 	$email = $_POST['email'];
 	$password = $_POST['password'];
+	$diachi = $_POST['diachi'];
+	$phone = $_POST['dienthoai'];
 	$enc_password = $password;
-	$sql = mysqli_query($conn, "select id from users where email='$email'");
+	$sql = mysqli_query($conn, "select id_user from users where email='$email'");
 	$row = mysqli_num_rows($sql);
 	if ($row > 0) {
 		echo "<script>alert('Email id already exist with another account. Please try with other email id');</script>";
 	} else {
-		$msg = mysqli_query($conn, "insert into users(fname,lname,email,password) values('$fname','$lname','$email','$enc_password')");
+		$msg = mysqli_query($conn, "insert into users(tenkhachhang,email,password,diachi,dienthoai) values('$username','$email','$enc_password','$diachi','$phone')");
 
 		if ($msg) {
 			echo "<script>alert('Register successfully');</script>";
@@ -73,28 +74,33 @@ if (isset($_POST['signup'])) {
 							</div>
 							<form action="#" method="POST" class="signin-form">
 								<div class="form-group mb-3">
-									<label class="label" for="name">First Name</label>
-									<input type="text" name="fname" class="form-control" placeholder="FirstName"
+									<label class="label" for="name">UserName</label>
+									<input type="text" name="tenkhachhang" class="form-control" placeholder="UserName"
 										required>
 								</div>
 
-								<div class="form-group mb-3">
-									<label class="label" for="name">Last Name</label>
-									<input type="text" name="lname" class="form-control" placeholder="LastName"
-										required>
-								</div>
 								<div class="form-group mb-3">
 									<label class="label" for="password">Email</label>
 									<input type="email" name="email" class="form-control" placeholder="mail@example.com"
 										required>
 								</div>
 
+
 								<div class="form-group mb-3">
 									<label class="label" for="password">Mật khẩu</label>
 									<input type="password" name="password" class="form-control" placeholder="Mật khẩu"
 										required>
 								</div>
-
+								<div class="form-group mb-3">
+									<label class="label" for="name">Địa chỉ</label>
+									<input type="text" name="diachi" class="form-control" placeholder="Địa chỉ"
+										required>
+								</div>
+								<div class="form-group mb-3">
+									<label class="label" for="name">Điện Thoại</label>
+									<input type="text" name="dienthoai" class="form-control" placeholder="phone"
+										required>
+								</div>
 
 								<div class="form-group">
 									<button type="submit" name="signup"

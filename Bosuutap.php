@@ -1,3 +1,15 @@
+<?php session_start();
+require_once('./admincp/config.php');
+
+$sql_pro = "SELECT * FROM san_pham where TINHTRANG= 2 ";
+$query_pro = mysqli_query($conn, $sql_pro);
+//$result = mysqli_query($conn, $sql);
+$san_pham = mysqli_fetch_all($query_pro, MYSQLI_ASSOC);
+//mysqli_free_result($result);
+//mysqli_close($conn);
+//var_dump($_POST);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -110,8 +122,12 @@
 					<div class="col-md-6">
 						<div class="about-img">
 							<button class="new_bt">Mới</button>
-							<div class="shoes-img"><img src="images/8r30prb4.png"></div>
-							<p class="sport_text">NMD_R1 SHOES</p>
+							<div class="shoes-img">
+								<ims src="images/Giày/<?php echo $san_pham[1]['HINH'] ?>">
+							</div>
+							<p class="sport_text">
+								<?php echo $san_pham[0]['TENSP'] ?>
+							</p>
 							<div class="dolar_text">$<strong style="color: #f12a47;">166.03</strong> </div>
 							<div class="star_icon">
 								<ul>

@@ -134,6 +134,8 @@ require_once('./admincp/config.php');
                                                 <th class="product_remove">Xóa</th>
                                                 <th class="product_thumb">Ảnh</th>
                                                 <th class="product_name">Sản Phẩm</th>
+                                                <th class="product_size">Size</th>
+                                                <th class="product_color">Color</th>
                                                 <th class="product-price">Giá Tiền</th>
                                                 <th class="product_quantity">Số lượng</th>
                                                 <th class="product_total">Tổng tiền</th>
@@ -167,9 +169,19 @@ require_once('./admincp/config.php');
                                                             <?php echo $cart_item['TENSP']; ?>
                                                             </a>
                                                         </td>
+                                                        <td class="product_size">
+                                                            <?php echo $cart_item['id_size']; ?>
+                                                            </a>
+                                                        </td>
+
+                                                        <td class="product_color">
+                                                            <?php echo $cart_item['id_color']; ?>
+                                                            </a>
+                                                        </td>
+
 
                                                         <td class="product-price">
-                                                            <?php echo number_format($cart_item['GIASP'], 0, ',', '.') . ' VND' ?>
+                                                            <?php echo number_format($cart_item['GIASP'], 0, ',') . ' VND' ?>
 
                                                         </td>
                                                         <td class="product_quantity">
@@ -220,10 +232,17 @@ require_once('./admincp/config.php');
                                     <h3>Tổng số giỏ hàng</h3>
                                     <div class="coupon_inner">
                                         <div class="cart_subtotal">
-                                            <p>Tổng hóa đơn hàng</p>
+                                            <p>Tổng hóa đơn</p>
                                             <p>
 
-                                                <?php echo number_format($tongtien, 0, ',', '.') . ' VND' ?>
+                                                <?php
+                                                if (isset($_SESSION['gio_hang'])) {
+                                                    echo number_format($tongtien, 0, ',', '.') . ' VND';
+                                                } else {
+                                                    echo "";
+                                                }
+
+                                                ?>
                                             </p>
                                         </div>
                                         <div class="cart_subtotal ">
@@ -234,10 +253,19 @@ require_once('./admincp/config.php');
 
                                         <div class="cart_subtotal">
                                             <p>Tổng cộng</p>
-                                            <p class="cart_amount"></p>
+                                            <p class="cart_amount">
+                                                <?php
+                                                if (isset($_SESSION['gio_hang'])) {
+                                                    echo number_format($tongtien, 0, ',', '.') . ' VND';
+                                                } else {
+                                                    echo "";
+                                                }
+
+                                                ?>
+                                            </p>
                                         </div>
                                         <div class="checkout_btn">
-                                            <a href="#">Tiến hành kiểm tra</a>
+                                            <a href="#"></a>
                                         </div>
                                     </div>
                                 </div>
